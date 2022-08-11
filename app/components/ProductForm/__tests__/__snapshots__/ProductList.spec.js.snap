@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ejercicio 1 - El componente ProductList 1) Renderiza 1`] = `
+<DocumentFragment>
+  <form>
+    <fieldset>
+      <legend>
+        Producto
+      </legend>
+      <label
+        for="id"
+      >
+        Id
+      </label>
+      <input
+        id="id"
+        placeholder="Inserte Id"
+        type="text"
+      />
+      <label
+        for="nombre"
+      >
+        Nombre
+      </label>
+      <input
+        id="nombre"
+        placeholder="Inserte nombre"
+        type="text"
+      />
+      <label
+        for="precio"
+      >
+        Precio
+      </label>
+      <input
+        id="precio"
+        placeholder="Inserte precio"
+        type="number"
+      />
+      <label
+        for="descripcion"
+      >
+        Descripción
+      </label>
+      <input
+        id="descripcion"
+        placeholder="Inserte descripción"
+        type="textarea"
+      />
+      <button>
+        Agregar producto
+      </button>
+    </fieldset>
+  </form>
+</DocumentFragment>
+`;
