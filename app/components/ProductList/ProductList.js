@@ -54,7 +54,7 @@ ProductList.propTypes = {
       thumbnail: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
     })
-  ).isRequired,
+  )
 };
 
 module.exports = ProductList;
