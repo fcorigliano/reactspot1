@@ -29,7 +29,9 @@ function View(props) {
       <Script src="productForm.js" />
 
       <ProductForm setProducts={setProducts} />
-      {JSON.stringify(products)}
+      <pre style={{margin: '15px 15px'}}>
+        {JSON.stringify(products, null, 2)}
+      </pre>
     </>
   );
 }
