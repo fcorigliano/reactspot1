@@ -13,9 +13,9 @@ const ProductForm = (props) => {
     const formData = new FormData(form.current);
     const product = {
       id: formData.get("id"),
-      nombre: formData.get("nombre"),
-      precio: formData.get("precio"),
-      descripcion: formData.get("descripcion"),
+      name: formData.get("name"),
+      price: formData.get("price"),
+      description: formData.get("description"),
     };
 
     let productValue = Object.values(product);
@@ -61,15 +61,15 @@ const ProductForm = (props) => {
           <br />
           <br />
           <label
-            htmlFor="nombre"
+            htmlFor="name"
             style={{ fontSize: "14px", marginRight: "5px", fontWeight: "bold" }}
           >
             Nombre
           </label>
           <br />
           <input
-            name="nombre"
-            id="nombre"
+            name="name"
+            id="name"
             type="text"
             placeholder="Gimbal DJI OM4"
             style={{
@@ -84,15 +84,15 @@ const ProductForm = (props) => {
           <br />
           <br />
           <label
-            htmlFor="precio"
+            htmlFor="price"
             style={{ fontSize: "14px", marginRight: "5px", fontWeight: "bold" }}
           >
             Precio
           </label>
           <br />
           <input
-            name="precio"
-            id="precio"
+            name="price"
+            id="price"
             type="number"
             placeholder="$29.900"
             style={{
@@ -107,15 +107,15 @@ const ProductForm = (props) => {
           <br />
           <br />
           <label
-            htmlFor="descripcion"
+            htmlFor="description"
             style={{ fontSize: "14px", marginRight: "5px", fontWeight: "bold" }}
           >
             Descripción
           </label>
           <br />
           <textarea
-            name="descripcion"
-            id="descripcion"
+            name="description"
+            id="description"
             style={{
               border: "1px solid",
               borderRadius: "3px",
