@@ -2,6 +2,7 @@ const React = require("react");
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const ProductForm = require("../../components/ProductForm");
+const ProductItem = require("../../components/ProductItem");
 const { useState, useEffect, useRef } = React;
 
 /**
@@ -29,9 +30,8 @@ function View(props) {
       <Script src="productForm.js" />
 
       <ProductForm setProducts={setProducts} />
-      <pre style={{ margin: "15px 15px" }}>
-        {JSON.stringify(products, null, 2)}
-      </pre>
+
+      <ProductItem products={products}/>
     </>
   );
 }
