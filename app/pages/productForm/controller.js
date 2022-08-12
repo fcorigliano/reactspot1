@@ -1,6 +1,6 @@
-const React = require('react');
-const View = require('./view');
- 
+const React = require("react");
+const View = require("./view");
+
 /**
  * Fetch Site data example
  */
@@ -11,13 +11,12 @@ const View = require('./view');
 //     next();
 //   }).catch(err => next(err));
 // };
- 
+
 exports.render = function render(req, res) {
   const ProductForm = (props) => <View {...props} />;
- 
-/**
- * Render View
- */
-  res.render(ProductForm, {
-  });
+
+  /**
+   * Render View
+   */
+  res.render(ProductForm, {});
 };

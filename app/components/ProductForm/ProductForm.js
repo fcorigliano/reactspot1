@@ -32,7 +32,7 @@ const ProductForm = (props) => {
 
   return (
     <>
-      <form ref={form} style={{width: '500px', margin: '15px 15px'}}>
+      <form ref={form} style={{ width: "500px", margin: "15px 15px" }}>
         <fieldset>
           <legend style={{ fontSize: "20px", fontWeight: "bold" }}>
             Producto
@@ -52,7 +52,7 @@ const ProductForm = (props) => {
             style={{
               border: "1px solid",
               borderRadius: "3px",
-              width: "200px", 
+              width: "200px",
               backgroundColor: "rgb(227, 227, 227, .4)",
               boxShadow: "none",
             }}
@@ -123,18 +123,30 @@ const ProductForm = (props) => {
               width: "350px",
               height: "75px",
               boxShadow: "none",
-              resize: "none"
+              resize: "none",
             }}
             required
           />
           <br />
           <br />
-          <button type="submit" onClick={handleProducts} style={{backgroundColor: '#008CBA', border: 'none', borderRadius: '7px', color: 'white', textAlign: 'center', fontSize: '16px', padding: '7px 20px'}}>
+          <button
+            type="submit"
+            onClick={handleProducts}
+            style={{
+              backgroundColor: "#008CBA",
+              border: "none",
+              borderRadius: "7px",
+              color: "white",
+              textAlign: "center",
+              fontSize: "16px",
+              padding: "7px 20px",
+            }}
+          >
             Agregar producto
           </button>
         </fieldset>
       </form>
-      <span style={{ color: "red", margin: '15px 15px'}}>{error}</span>
+      <span style={{ color: "red", margin: "15px 15px" }}>{error}</span>
     </>
   );
 };

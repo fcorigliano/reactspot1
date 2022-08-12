@@ -1,17 +1,17 @@
 /**
  * Styles
  */
-require('../pages/demo/styles.scss');
+require("../pages/demo/styles.scss");
 
 /**
  * Module dependencies
  */
-const React = require('react');
-const hydrate = require('nordic/hydrate');
-const I18n = require('nordic/i18n');
-const I18nProvider = require('nordic/i18n/I18nProvider');
-const ImageProvider = require('nordic/image/provider');
-const DemoView = require('../pages/demo/view');
+const React = require("react");
+const hydrate = require("nordic/hydrate");
+const I18n = require("nordic/i18n");
+const I18nProvider = require("nordic/i18n/I18nProvider");
+const ImageProvider = require("nordic/image/provider");
+const DemoView = require("../pages/demo/view");
 
 /**
  * Get server state
@@ -25,7 +25,6 @@ const {
   translations,
   imagesPrefix,
 } = window.__PRELOADED_STATE__;
-
 
 /**
  * i18n
@@ -47,5 +46,5 @@ hydrate(
       />
     </ImageProvider>
   </I18nProvider>,
-  document.getElementById('root-app'),
+  document.getElementById("root-app")
 );

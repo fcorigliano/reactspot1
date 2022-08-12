@@ -28,7 +28,7 @@ const i18n = new I18n({ translations });
 hydrate(
   <I18nProvider i18n={i18n}>
     <ImageProvider prefix={imagesPrefix}>
-      <ProductListView products={products}/>
+      <ProductListView products={products} />
     </ImageProvider>
   </I18nProvider>,
   document.getElementById("root-app")
