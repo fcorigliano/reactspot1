@@ -64,7 +64,7 @@ describe('La View de ProductForm', () => {
         fireEvent.change(price, { target: { value: '345476584' }});
         fireEvent.click(button);
 
-        const errorMsg = await screen.findByText(/no pueden haber campos vacíos/i);
+        const errorMsg = await screen.findByText(/No puede haber campos vacíos/i);
         expect(errorMsg).toBeInTheDocument();
     });
 

@@ -2,68 +2,83 @@
 
 exports[`La View de ProductForm 1) Renderiza 1`] = `
 <DocumentFragment>
-  <form>
+  <form
+    style="width: 500px; margin: 15px 15px;"
+  >
     <fieldset>
-      <legend>
+      <legend
+        style="font-size: 20px; font-weight: bold;"
+      >
         Producto
       </legend>
       <label
         for="id"
+        style="font-size: 14px; margin-right: 5px; font-weight: bold;"
       >
         Id
       </label>
+      <br />
       <input
         id="id"
         name="id"
-        placeholder="Inserte Id"
+        placeholder="MLA19049553"
         required=""
+        style="border: 1px solid; border-radius: 3px; width: 200px; box-shadow: none;"
         type="text"
       />
       <br />
       <br />
       <label
-        for="nombre"
+        for="name"
+        style="font-size: 14px; margin-right: 5px; font-weight: bold;"
       >
         Nombre
       </label>
+      <br />
       <input
-        id="nombre"
-        name="nombre"
-        placeholder="Inserte nombre"
+        id="name"
+        name="name"
+        placeholder="Gimbal DJI OM4"
         required=""
+        style="border: 1px solid; border-radius: 3px; width: 200px; box-shadow: none;"
         type="text"
       />
       <br />
       <br />
       <label
-        for="precio"
+        for="price"
+        style="font-size: 14px; margin-right: 5px; font-weight: bold;"
       >
         Precio
       </label>
+      <br />
       <input
-        id="precio"
-        name="precio"
-        placeholder="Inserte precio"
+        id="price"
+        name="price"
+        placeholder="$29.900"
         required=""
+        style="border: 1px solid; border-radius: 3px; width: 200px; box-shadow: none;"
         type="number"
       />
       <br />
       <br />
       <label
-        for="descripcion"
+        for="description"
+        style="font-size: 14px; margin-right: 5px; font-weight: bold;"
       >
         Descripción
       </label>
-      <input
-        id="descripcion"
-        name="descripcion"
-        placeholder="Inserte descripción"
+      <br />
+      <textarea
+        id="description"
+        name="description"
         required=""
-        type="textarea"
+        style="border: 1px solid; border-radius: 3px; width: 350px; height: 75px; box-shadow: none; resize: none;"
       />
       <br />
       <br />
       <button
+        style="background-color: rgb(0, 140, 186); border-radius: 7px; color: white; text-align: center; font-size: 16px; padding: 7px 20px;"
         type="submit"
       >
         Agregar producto
@@ -71,8 +86,12 @@ exports[`La View de ProductForm 1) Renderiza 1`] = `
     </fieldset>
   </form>
   <span
-    style="color: red;"
+    style="color: red; margin: 15px 15px;"
   />
-  []
+  <pre
+    style="margin: 15px 15px;"
+  >
+    []
+  </pre>
 </DocumentFragment>
 `;
