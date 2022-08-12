@@ -31,7 +31,7 @@ function View(props) {
 
       <ProductForm setProducts={setProducts} />
 
-      <ProductItem products={products}/>
+      <ProductItem products={products} />
     </>
   );
 }
