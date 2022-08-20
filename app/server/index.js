@@ -14,6 +14,7 @@ require("../../mocks");
 /**
  * Routers
  */
+const home = require("../pages/home");
 const demoRoute = require("../pages/demo");
 const productList = require("../pages/productList");
 const productForm = require("../pages/productForm");
@@ -33,6 +34,7 @@ router.get("/", (req, res) => res.redirect(`${config.ragnar.basePath}demo`));
 /**
  * Mount routers
  */
+router.use("/home", home);
 router.use("/demo", demoRoute);
 router.use("/productList", productList);
 router.use("/productForm", productForm);

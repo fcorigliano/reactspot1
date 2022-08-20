@@ -16,6 +16,7 @@ const path = require('path');
  */
 
 const entrypoints = {
+  home: './app/client/home.js',
   demo: './app/client/demo.js',
   productList: './app/client/productList.js',
   productForm: './app/client/productForm.js'
