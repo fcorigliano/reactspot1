@@ -19,7 +19,8 @@ const entrypoints = {
   home: './app/client/home.js',
   demo: './app/client/demo.js',
   productList: './app/client/productList.js',
-  productForm: './app/client/productForm.js'
+  productForm: './app/client/productForm.js',
+  flex: './app/client/flex.js'
 };
 
 const generateLegacyBundles = entryPoints => Object.keys(entryPoints).reduce((accumulator, entrypointName) => {

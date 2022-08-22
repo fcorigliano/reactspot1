@@ -18,6 +18,7 @@ const home = require("../pages/home");
 const demoRoute = require("../pages/demo");
 const productList = require("../pages/productList");
 const productForm = require("../pages/productForm");
+const flex = require("../pages/flex");
 
 /**
  * Use global middlewares
@@ -38,6 +39,7 @@ router.use("/home", home);
 router.use("/demo", demoRoute);
 router.use("/productList", productList);
 router.use("/productForm", productForm);
+router.use("/flex", flex);
 /**
  * Expose router
  */

@@ -1,0 +1,48 @@
+.nav-footer-access{
+    display: none;
+}
+
+.container{
+    display: flex;
+    background-color: burlywood;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .box1{
+        flex-grow: 1;
+        align-self: baseline;
+        background-color: darkslategray;
+        order: 2;
+    }
+
+    .box2{
+        flex-grow: 2;
+        align-self: flex-end;
+        background-color: tomato;
+        order: 3;
+    }
+
+    .box3{
+        flex-grow: 3;
+        align-self: center;
+        background-color: darkblue;
+        order: 4;
+    }
+
+    .box4{
+        flex-grow: 4;
+        align-self: stretch;
+        background-color: darkmagenta;
+        order: 1;
+    }
+}
